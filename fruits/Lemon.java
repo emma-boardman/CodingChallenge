@@ -13,20 +13,20 @@ public Lemon(){
 
 // product name
       public String getProductName(){
-          return "Lemon";
+          return productName;
       }
 
 
 // country of origin
 
     public String getCountryOfOrigin(){
-          return "Spain";
+          return countryOfOrigin;
       }
 
 // price
 
       public int getPrice(){
-        return 1;
+        return price ;
       }
 
 // discount behaviour
