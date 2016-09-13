@@ -3,9 +3,9 @@ import org.junit.*;
 import fruits.*;
 import discount_behaviours.*;
 
-public class FruitsTest {
+public class FruitTests {
 
-  Lemon lemon;
+Lemon lemon;
 
   @Before
   public void before(){

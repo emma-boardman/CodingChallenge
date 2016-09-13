@@ -1,18 +1,20 @@
-package fruit;
+package fruits;
 import discount_behaviours.*;
 
-public class Fruit implements Buyable{
+public class Fruit 
+// implements Buyable
+{
 
-      private String productName;
-      private String countryOfOrigin;
-      private int price;
-      private DiscountBehaviour discountBehaviour;
+      public String productName;
+      public String countryOfOrigin;
+      public int price;
+      public DiscountBehaviour discountBehaviour;
 
 // product name 
-      public String getProductName()
-      {
-          return productName;
-      }
+      // public String getProductName()
+      // {
+      //     return productName;
+      // }
 
       // public void setName(String productName)
       // {
@@ -21,9 +23,9 @@ public class Fruit implements Buyable{
 
 // country of origin
 
-      public String getCountryOfOrigin(){
-        return countryOfOrigin;
-      }
+      // public String getCountryOfOrigin(){
+      //   return countryOfOrigin;
+      // }
 
       // public void setCountryOfOrigin(String countryOfOrigin){
       //   this.countryOfOrigin = countryOfOrigin;
@@ -31,23 +33,22 @@ public class Fruit implements Buyable{
 
 // price
 
-    public int getPrice(){
-      return price;
-    }
+    // public int getPrice(){
+    //   return price;
+    // }
 
     // public void setPrice(int price){
     //     this.price = price;
     // }
 
-// discount behaviour
+// // discount behaviour
 
-    public String getDiscountBehaviour(){
-      return discountBehaviour.discountStatus();
-    }
+//     public String getDiscountBehaviour(){
+//       return discountBehaviour.discountStatus();
+//     }
 
     // public void setDiscountBehaviour(DiscountBehaviour newDiscountBehaviour){
     //   discountBehaviour = newDiscountBehaviour;
     // }
 
   }
-}

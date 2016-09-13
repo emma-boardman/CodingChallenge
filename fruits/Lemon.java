@@ -1,15 +1,17 @@
-package fruit;
+package fruits;
 import discount_behaviours.*;
 
 public class Lemon extends Fruit {
 
 public Lemon(){
   super();
+  productName = "Lemon";
+  countryOfOrigin = "Spain";
+  price = 1;
   discountBehaviour = new NoDiscount();
 }
 
-
-// product name 
+// product name
       public String getProductName(){
           return "Lemon";
       }
