@@ -24,4 +24,12 @@ public class ShoppingBasket {
     basket.clear();
   }
 
+
+  public Buyable removeItemFromBasket(Buyable item) {
+    if (basket.remove(item)) {
+       return item;
+    }
+    return null;
+}
+
 }

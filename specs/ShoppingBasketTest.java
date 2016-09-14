@@ -36,12 +36,14 @@ public void canPutLimeInBasket(){
   assertEquals(1, shoppingBasket.itemCount());
 }
 
+@Test
+public void canRemoveItemfromBasket(){
+shoppingBasket.addToBasket(orange);
+    assertEquals(1, shoppingBasket.itemCount());
+  shoppingBasket.removeItemFromBasket(orange);
+  assertEquals(0, shoppingBasket.itemCount());
+}
 
-// @Test
-// public void canRemoveOrangeFromBasket(){
-//   shoppingBasket.addToBasket(orange);
-//   Buy
-//   assertEquals(1, shoppingBasket.itemCount());
-// }
+
 
 }
