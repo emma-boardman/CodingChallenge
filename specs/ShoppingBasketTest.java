@@ -45,5 +45,17 @@ shoppingBasket.addToBasket(orange);
 }
 
 
+@Test
+public void canEmptyBasket() {
+  shoppingBasket.addToBasket(orange);
+  shoppingBasket.addToBasket(lemon);
+  shoppingBasket.addToBasket(lime);
+  assertEquals(3, shoppingBasket.itemCount());
+
+  shoppingBasket.clearBasket();
+  assertEquals(0, shoppingBasket.itemCount());
+}
+
+
 
 }
