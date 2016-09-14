@@ -1,3 +1,4 @@
+package shopping_basket;
 import java.util.*;
 import buyable_interface.*;
 import fruits.*;
@@ -22,3 +23,5 @@ public class ShoppingBasket {
   public void clearBasket(){
     basket.clear();
   }
+
+}
