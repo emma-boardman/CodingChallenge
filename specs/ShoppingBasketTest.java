@@ -3,6 +3,7 @@ import org.junit.*;
 import fruits.*;
 import discount_behaviours.*;
 import shopping_basket.*;
+// import register.*;
 
 public class ShoppingBasketTest {
 
@@ -56,6 +57,13 @@ public void canEmptyBasket() {
   assertEquals(0, shoppingBasket.itemCount());
 }
 
+@Test
+public void returnsTotalPrice(){
+  shoppingBasket.addToBasket(orange);
+  shoppingBasket.addToBasket(lemon);
+  shoppingBasket.addToBasket(lime);
+  assertEquals(3, shoppingBasket.totalPrice());
+}
 
 
 }

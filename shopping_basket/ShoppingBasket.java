@@ -32,6 +32,12 @@ public class ShoppingBasket {
     return null;
 }
 
-
+public int totalPrice(){
+  int total = 0;
+  for(Buyable item : basket) {
+    total += item.getPrice();
+  }
+  return total;
+}
 
 }

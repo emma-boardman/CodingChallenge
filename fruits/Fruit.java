@@ -2,7 +2,7 @@ package fruits;
 import discount_behaviours.*;
 import buyable_interface.*;
 
-public class Fruit implements Buyable
+abstract class Fruit implements Buyable
 {
 
       public String productName;
